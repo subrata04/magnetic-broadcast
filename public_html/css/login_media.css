@@ -1,0 +1,156 @@
+@media screen and (max-width: 1024px){
+
+.logo_login{
+    width:300px;
+    position:inherit;
+    left:0; top:0;
+    margin:0 auto;
+    padding-top:15px;
+    }
+.head_memberinfo{
+        position:inherit;
+        right:0;
+        top:0;
+        z-index:2;
+        font-size:11px;
+        line-height:13px;
+        width:180px; margin:12px auto;
+        }
+
+.nav_section{
+    height:45px;
+    width:auto;
+    padding-top:0px;
+
+    
+    }
+
+
+
+#bg_wrapper{ background-image:none;}
+#sidebar{
+    float:none;
+    width:100%;
+    
+    background:#eaeaea;
+    display:block;
+    
+    }
+    
+    #sidebar  li{width:100%;}    
+#sidebar li{width:100%;}    
+
+    #sidebar li a{
+    line-height:32px;
+width:100%;
+    text-decoration:none;
+    display:block;
+    padding: 0 20px;
+    background-image:none;
+    outline:none;
+    }
+    
+    #main{
+    float:none;
+    width:94%;
+    margin-left:inherit;
+    margin:0 auto;
+    position:relative;
+    /*background-color:#faf5f1;*/
+        }
+
+#content{
+    margin-left:inherit;
+    margin-right:inherit;
+    padding-top:20px;
+    position:inherit;
+    margin:0 auto;
+    }
+
+.content-box{ width:100%; float:none; margin:10px 0;}
+
+#sidebar{  padding-bottom:0; width:auto; padding-right:20px; border-top:solid 1px #c0c0c0;}
+#sidebar li a{ border-top:none; border-bottom:solid 1px #c0c0c0;}
+#sidebar li{ width:220px; float:left;  border:solid 1px #c0c0c0; border-top:none; border-left:none;}
+
+#sidebar .headitem{ border:none;}
+
+
+
+}
+
+
+@media screen and (max-width: 480px){
+
+
+.logologin{
+    width:60%;
+    margin:50px auto;
+    
+    }
+
+
+
+#sidebar{ width:auto; border-bottom:none; padding:0;}
+#sidebar li{ width:100%; border-right:none;}
+.loginheading{ width:auto;}
+
+.login-area{
+    width:80%;
+    margin:20px auto;
+    padding-top:20px;
+    }
+    .loginsection{
+    width:85%;}
+} 
+
+
+
+@media screen and (max-width:1200px){
+    
+        /* Force table to not be like tables anymore */
+        table, thead, tbody, th, td, tr { 
+            display: block; 
+        }
+        
+        /* Hide table headers (but not display: none;, for accessibility) */
+        thead tr { 
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+        
+        tr { border: 1px solid #959595; margin-bottom:10px; }
+        
+        td { 
+            /* Behave  like a "row" */
+            border: none;
+            border-bottom: 1px solid #959595; 
+            position: relative;
+            padding-left: 50%; 
+        }
+        
+        td:before { 
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 6px;
+            left: 6px;
+            width: 45%; 
+            padding-right: 10px; 
+            white-space: nowrap;
+        }
+        
+        /*
+        Label the data
+            
+        */
+        
+
+        
+#table_liquid tr td:first-child{ border-left:none;}
+    
+    }
+    
+    
+

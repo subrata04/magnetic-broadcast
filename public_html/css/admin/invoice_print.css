@@ -1,0 +1,25 @@
+h2 {
+    border-bottom: 1px solid #C0C0C0;
+    clear: both;
+    color: #484848;
+    font: 22px/22px Tahoma,"Trebuchet MS","Lucida Sans";
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+table.details {
+    border-collapse: collapse;
+}
+table.details td {
+    border: 1px solid #959595;
+    color: #636363;
+    font: 12px/22px Arial,Helvetica,sans-serif;
+    padding: 2px 5px;
+}
+table.details th {
+    background-color: #4A5C8A;
+    border: 1px solid #959595;
+    color: #FFFFFF;
+    font: 14px/22px Arial,Helvetica,sans-serif;
+    padding: 3px 5px;
+}

@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+
+ @media screen and (max-width:1024px) {
+ .top-wraper {
+width:100%;
+margin:0 auto;
+}
+ .main-wraper {
+width:70%;
+margin:0 auto;
+}
+ .left-contain {
+width:100%;
+float:none;
+}
+ .left-contain ul {
+width:100%;
+margin:0 auto;
+margin-bottom:70px;
+}
+ .right-contain {
+float:none;
+margin:20px auto;
+}
+ .bottom-body .top-text-contain p {
+width:100%;
+float:none;
+}
+ .bottom-body .bottom-text-contain p {
+width:100%;
+float:none;
+}
+ .footer-contaon .img1 {
+width:80%;
+float:none;
+display:block;
+margin:0 auto;
+border-bottom:solid 1px #ddd;
+}
+ .footer-contaon .img2 {
+width:80%;
+float:none;
+display:block;
+margin:0 auto;
+}
+.footer-contaon p {
+float:none;
+width:100%;
+text-align:center;
+}
+}
+ @media screen and (max-width:856px) {
+ .left-contain .box-contain {
+float:none;
+margin:15px auto;
+width:200px;
+}
+
+.left-contain .middle-box-text {
+	width:100%;
+	margin:0 auto;
+	padding:270px 0 0 0;
+	margin:20px auto;
+
+	background: #eaeaea url(../images/con-img1demo.png) no-repeat top center;
+	background-size:cover;
+
+}
+.left-contain .middle-box-text p{ background:#000; opacity:0.7; padding:10px; color:#fff; border-radius:0 0 6px 6px;}
+
+ .bottom-body .top-text-contain img{ width:60%; margin:0 auto; float:none; display:block;}
+   .bottom-body .top-text-contain p{ text-align:center;}
+
+.bottom-body .top-text-contain p strong { text-align:center;}
+
+
+  .bottom-body .bottom-text-contain img{ width:60%; margin:0 auto; float:none; display:block;}
+  .bottom-body .bottom-text-contain p{ text-align:center;}
+
+.bottom-body .bottom-text-contain p strong { text-align:center;}
+
+}
+ @media screen and (max-width:580px) {
+ .top-body {
+background:none;
+}
+ .left-contain h1 {
+width:100%;
+text-align:center;
+margin:20px auto;
+}
+.bottom-body .top-text-contain img{ width:100%; margin:0 auto; float:none; display:block;}
+  .bottom-body .bottom-text-contain img{ width:100%; margin:0 auto; float:none; display:block;}
+  
+  .right-contain{ width:98%; margin:0 auto;}
+.right-contain .form-contain .form-wraper label{ display:block; float:none; }
+.right-contain .form-contain .form-wraper .input1{ width:90%; float:none;}
+.right-contain .form-contain .form-wraper span.error{ margin:0 auto;}
+
+
+}
+ @media screen and (max-width:420px) {
+ .logo {
+width:80%;
+}
+
+  
+
+}
+
+
+ @media screen and (max-width:400px) {
+.left-contain ul li {background:url(../images/tick-icon.png) no-repeat top center; padding:60px 0px 0px 0px; text-align:center;}
+
+
+}

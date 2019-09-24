@@ -1,0 +1,87 @@
+.tipsy {
+    font-size: 12px;
+    padding: 5px;
+    position: absolute;
+    z-index: 100000;
+}
+.tipsy-inner {
+    background-color: black;/*#223156;*/
+    color: white;    
+    padding: 5px 10px 5px;
+    text-align: center;
+}
+.tipsy-inner {
+    border-radius: 6px;
+}
+.tipsy-arrow {
+    background: url("../../images/admin/tipsy.gif") no-repeat scroll left top transparent;
+    height: 5px;
+    position: absolute;
+    width: 9px;
+}
+.tipsy-n .tipsy-arrow {
+    left: 50%;
+    margin-left: -4px;
+    top: 0;
+}
+.tipsy-nw .tipsy-arrow {
+    left: 10px;
+    top: 0;
+}
+.tipsy-ne .tipsy-arrow {
+    right: 10px;
+    top: 0;
+}
+.tipsy-s .tipsy-arrow {
+    background-position: left bottom;
+    bottom: 0;
+    left: 50%;
+    margin-left: -4px;
+}
+.tipsy-sw .tipsy-arrow {
+    background-position: left bottom;
+    bottom: 0;
+    left: 10px;
+}
+.tipsy-se .tipsy-arrow {
+    background-position: left bottom;
+    bottom: 0;
+    right: 10px;
+}
+.tipsy-e .tipsy-arrow {
+    background-position: right top;
+    height: 9px;
+    margin-top: -4px;
+    right: 0;
+    top: 50%;
+    width: 5px;
+}
+.tipsy-w .tipsy-arrow {
+    height: 9px;
+    left: 0;
+    margin-top: -4px;
+    top: 50%;
+    width: 5px;
+}
+
+
+#gravity {
+    border-spacing: 5px;
+    margin: 5px 0;
+    width: 100%;
+}
+#gravity td {
+    background-color: #4A5C8A;
+    padding: 5px 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 33%;
+}
+#gravity a {
+}
+#gravity a:hover {
+    background: none repeat scroll 0 0 transparent;
+    color: #505050;
+}
+
+

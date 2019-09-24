@@ -1,0 +1,1 @@
+<div id="footerHolder">&copy; Copyright altfatale.com. All Rights Reserved.</div>

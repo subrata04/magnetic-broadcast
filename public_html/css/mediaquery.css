@@ -1,0 +1,638 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-width: 1100px) {
+.iwatchWrapper {
+	width: 95%;
+	padding: 0 5px;
+}
+.hedaText h1 {
+	font-size: 20px;
+}
+.cameraLeft {
+	float: left;
+	width: 12.5%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.cameraRight {
+	float: right;
+	width: 12.5%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.phone {
+	float: right;
+	width: 50%;
+	margin-top: 20px;/*position:absolute;*//*z-index:100;
+	right:0;*/
+}
+.homeContent {
+	background: url(../images/homecontent_bg.png) repeat-x left top #e1e1e1;
+	margin: 0 24px;
+	border: 2px solid #dddddd;
+	padding: 10px;
+	border-radius: 5px;
+}
+}
+@media screen and (max-width: 10850px) {
+.phone {
+	float: right;
+	width: 50%;
+	margin-top: 30px;/*position:absolute;*//*z-index:100;
+	right:0;*/
+}
+}
+ @media screen and (max-width: 1000px) {
+.hedaText h1 {
+	font-size: 19px;
+}
+.homeContent {
+	background: url(../images/homecontent_bg.png) repeat-x left top #e1e1e1;
+	margin: 0 24px;
+	border: 2px solid #dddddd;
+	padding: 7px;
+	border-radius: 5px;
+}
+.phone {
+	float: right;
+	width: 50%;
+	margin-top: 40px;/*position:absolute;*//*z-index:100;
+	right:0;*/
+}
+}
+ @media screen and (max-width: 980px) {
+.hedaText h1 {
+	font-size: 18px;
+}
+.phone {
+	float: right;
+	width: 50%;
+	margin-top: 50px;
+}
+.bigArrow {
+	float: right;
+	/*	position:absolute;
+	right:-15px;
+	bottom:5px;*/
+	width: 70.5%;
+	margin: -130px 0 -15px 0;
+}
+.link {
+	margin: 20px 0 0 0;
+}
+.homeBox {
+	width: 17.9%;
+	margin: 5px 7px 0 6px;
+	float: left;
+	border: 2px solid #c6c6c6;
+	text-align: center;
+	position: relative;
+}
+}
+ @media screen and (max-width: 960px) {
+.hedaText h1 {
+	font-size: 20px;
+	float: none;
+	text-align: center;
+	width: auto;
+	padding-bottom: 20px;
+}
+.hedaBg {
+	float: none;
+	width: 50%;
+	margin: 0 auto;
+	display:none;
+}
+.hedaBg2 {
+	margin:0 auto;
+	display:inherit;
+	padding-top:10px;
+	
+}
+.hedaBg2 img {
+	border:2px solid #00a8a1;
+}
+.freequto {
+	float: left;
+	margin: 20px 14px 0 25px;
+	width: 30%;
+	text-align: center;
+}
+.bulletPoint ul li {
+	background: url(../images/bullet.png) no-repeat 0 0;
+	color: #000000;
+	font-size: 15px;
+	font-family: 'sansationitalic';
+	padding: 0 0 35px 25px;
+	font-weight: 400;
+}
+/*.phone {
+	float: right;
+	width: 50%;
+	margin-top:55px;
+}*/
+.homeBox {
+	width: 17.6%;
+	margin: 5px 7px 0 6px;
+	float: left;
+	border: 2px solid #c6c6c6;
+	text-align: center;
+	position: relative;
+}
+.footCenter {
+	margin: 0 auto;
+	width: 62%;
+	padding: 20px 0 0 0;
+}
+.startNow {
+	width: 80%;
+	margin: 0 auto;
+	font-size:18px;
+}
+ }
+ @media screen and (max-width: 900px) {
+.homeBox {
+	width: 17.4%;
+	margin: 5px 7px 0 6px;
+	float: left;
+	border: 2px solid #c6c6c6;
+	text-align: center;
+	position: relative;
+}
+.businessBox {
+	width: 45%;
+	border: 2px solid #c6c6c6;
+	text-align: center;
+	position: relative;
+	float: left;
+	margin: 0 8px 20px 0;
+}
+.startNow2 {
+	width: 25%;
+	margin: -40px auto;
+}
+.phone {
+	float: right;
+	width: 50%;
+	margin-top: 60px;
+}
+.wranty {
+	float: left;
+	width: 24%;
+
+}
+.wratyText {
+	width: 70%;
+	float: right;
+	color: #000;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+}
+ @media screen and (max-width: 850px) {
+.phone {
+	float: right;
+	width: 50%;
+	margin-top: 70px;
+}
+
+}
+@media screen and (max-width: 800px) {
+.freequto {
+	float: none;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	padding: 20px 0;
+}
+.powerful {
+	float: none;
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+}
+.powerfulHeading {
+	color: #005e5b;
+	font-size: 25px;
+	font-family: 'sansationbold';
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	line-height: 33px;
+	text-align: center;
+}
+.quotField2 {
+	border: 1px solid #b5b5b5;
+	background: #fff;
+	border-radius: 5px;
+	height: 42px;
+	box-shadow: inset 0 0 10px #b5b5b5;
+	width: 100%;
+	padding: 2%;
+	color: #666;
+	font-size: 13px;
+	font-weight: normal;
+	font-family: Verdana, Geneva, sans-serif;
+	margin-bottom: 15px;
+}
+.phone {
+	float: right;
+	width: 45%;/*margin-top:80px;*/
+}
+.bigArrow {
+	float: right;
+	/*	position:absolute;
+	right:-15px;
+	bottom:5px;*/
+	width: auto;
+	/*display: none;*/
+	margin: -80px 0 0 0;
+}
+.homeBox {
+	width: 17.3%;
+	margin: 5px 7px 0 6px;
+	float: left;
+	border: 2px solid #c6c6c6;
+	text-align: center;
+	position: relative;
+}
+.homeLeft {
+	float: none;
+	width: auto;
+	text-align: center;
+	margin-top: 25px;
+}
+.homeRight {
+	float: none;
+	width: auto;
+	margin-top: 42px;
+}
+.offSite {
+	text-align: left;
+	padding: 0 15%;
+}
+.offSite ul li:last-child {
+	padding-bottom: 0;
+}
+.businessBox {
+	width: 46%;
+	border: 2px solid #c6c6c6;
+	text-align: center;
+	position: relative;
+	float: left;
+	margin: 0 8px 20px 8px;
+}
+.playbox {
+	width: auto;
+	float: none;
+	margin: 20px auto;
+}
+.software {
+	width: auto;
+	float: none;
+	margin: 20px auto;
+}
+.dvr {
+	width: auto;
+	float: none;
+	margin: 20px auto;
+}
+.footCenter {
+	margin: 0 auto;
+	width: 62%;
+	padding: 15px 0 0 0;
+}
+.hedaText h1 {
+	font-size: 18px;
+	float: none;
+	text-align: center;
+	width: auto;
+	padding-bottom: 20px;
+}
+
+}
+@media screen and (max-width: 750px) {
+.homeBox {
+	width: 30%;
+	margin: 5px 7px 0 6px;
+	float: left;
+	border: 2px solid #c6c6c6;
+	text-align: center;
+	position: relative;
+}
+.startNow2 {
+	width: 25%;
+	margin: -35px auto;
+}
+.hedaText h1 {
+	font-size: 16px;
+	float: none;
+	text-align: center;
+	width: auto;
+	padding-bottom: 20px;
+}
+.phone {
+	float: right;
+	width: 45%;/*margin-top:80px;*/
+}
+.bigArrow {
+	float: none;
+	/*	position:absolute;
+	right:-15px;
+	bottom:5px;*/
+	width: auto;
+	/*display: none;*/
+	margin: 0 auto;
+}
+}
+ @media screen and (max-width: 700px) {
+.homeBox {
+	width: 80%;
+	margin: 0 auto 15px;
+	float: none;
+	border: 2px solid #c6c6c6;
+	text-align: center;
+	position: relative;
+}
+.businessBox {
+	width: 80%;
+	border: 2px solid #c6c6c6;
+	text-align: center;
+	position: relative;
+	float: none;
+	margin: 0 auto 20px;
+}
+.homeLeftText {
+	color: #005250;
+	font-size: 16px;
+	font-family: 'sansationbold_italic';
+	text-align: center;
+	line-height: 30px;
+	padding-bottom: 22px;
+}
+.business h2 {
+	font-size: 28px;
+}
+.commercial h2 {
+	font-size: 28px;
+}
+.offSite {
+	text-align: left;
+	padding: 0;
+}
+.startNow2 {
+	width: 25%;
+	margin: -30px auto;
+}
+}
+ @media screen and (max-width: 620px) {
+.freequto {
+	float: none;
+	margin: 0 auto;
+	width: 90%;
+	text-align: center;
+	padding: 20px 0;
+}
+.powerful {
+	float: none;
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+.bulletPoint {
+	float: none;
+	width: auto;
+	margin: 0 auto;
+	padding: 0 20%;
+}
+.bulletPoint ul li {
+	background: url(../images/bullet.png) no-repeat 0 0;
+	color: #000000;
+	font-size: 17px;
+	font-family: 'sansationitalic';
+	padding: 0 0 35px 25px;
+	font-weight: 400;
+}
+.phone {
+	float: none;
+	width: 75%;
+	margin-top: 18px;
+	margin: 0 auto;
+}
+.offSite ul li {
+	background: url(../images/bullet.png) no-repeat 0 4px;
+	color: #000000;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0 0 45px 25px;
+}
+.business h2 {
+	font-size: 24px;
+}
+.commercial h2 {
+	font-size: 24px;
+}
+.offSite h2 {
+	font-size: 18px;
+}
+.startNow2 {
+	width: 30%;
+	margin: -30px auto;
+}
+.footCamera {
+	float: none;
+	width: 40%;
+	margin: 10px auto;
+}
+.footCenter {
+	margin: 0 auto;
+	width: 95%;
+	padding: 15px 0 15px 0;
+	line-height: 18px;
+}
+.footRight {
+	float: none;
+	width: 80%;
+	margin: 0 auto;
+}
+.startNow {
+	width: 90%;
+	margin: 0 auto;
+	font-size:16px;
+}
+}
+ @media screen and (max-width: 480px) {
+.cameraLeft {
+	float: left;
+	width: 12.5%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.cameraRight {
+	float: right;
+	width: 12.5%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: none;
+}
+.logo {
+	width: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+.powerfulHeading {
+	color: #005e5b;
+	font-size: 20px;
+	font-family: 'sansationbold';
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	line-height: 26px;
+	text-align: center;
+}
+.bulletPoint {
+	float: none;
+	width: auto;
+	margin: 0 auto;
+	padding: 0 10%;
+}
+.homeBox {
+	width: 90%;
+	margin: 0 auto 15px;
+	float: none;
+	border: 2px solid #c6c6c6;
+	text-align: center;
+	position: relative;
+}
+.businessBox {
+	width: 90%;
+	border: 2px solid #c6c6c6;
+	text-align: center;
+	position: relative;
+	float: none;
+	margin: 0 auto 20px;
+}
+.wranty {
+	float: none;
+	width: 50%;
+	margin: 0 auto 15px;
+}
+.wratyText {
+	width: auto;
+	float: none;
+	text-align: center;
+}
+.business h2 {
+	font-size: 22px;
+}
+.commercial h2 {
+	font-size: 22px;
+}
+.playbox h2, .software h2, .dvr h2 {
+	font-size: 18px;
+}
+.easySetup h2 {
+	font-size: 26px;
+}
+.startNow2 {
+	width: 50%;
+	margin: -25px auto;
+}
+.homeTitle {
+	font-size: 28px;
+}
+}
+ @media screen and (max-width: 320px) {
+.powerfulHeading {
+	color: #005e5b;
+	font-size: 17px;
+	font-family: 'sansationbold';
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	line-height: 24px;
+	text-align: center;
+}
+.homeBox {
+	width: 95%;
+	margin: 0 auto 15px;
+	float: none;
+	border: 2px solid #c6c6c6;
+	text-align: center;
+	position: relative;
+}
+.businessBox {
+	width: 85%;
+	border: 2px solid #c6c6c6;
+	text-align: center;
+	position: relative;
+	float: none;
+	margin: 0 auto 20px;
+}
+.business h2 {
+	font-size: 20px;
+}
+.commercial h2 {
+	font-size: 20px;
+}
+.easySetup h2 {
+	font-size: 24px;
+}
+.startNow2 {
+	width: 80%;
+	margin: -20px auto;
+}
+.homeTitle {
+	font-size: 20px;
+}
+}
+ @media screen and (max-width: 280px) {
+.powerfulHeading {
+	color: #005e5b;
+	font-size: 15px;
+	font-family: 'sansationbold';
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	line-height: 22px;
+	text-align: center;
+}
+.business h2 {
+	font-size: 18px;
+}
+.commercial h2 {
+	font-size: 18px;
+}
+.easySetup h2 {
+	font-size: 22px;
+}
+.startNow {
+	width: 100%;
+	margin: 0 auto;
+	font-size:14px;
+}
+.homeTitle {
+	font-size: 18px;
+}
+}
+@media screen and (max-width: 180px) {
+.powerfulHeading {
+	color: #005e5b;
+	font-size: 14px;
+	font-family: 'sansationbold';
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	line-height: 20px;
+	text-align: center;
+}
+.business h2 {
+	font-size: 16px;
+}
+.commercial h2 {
+	font-size: 16px;
+}
+.easySetup h2 {
+	font-size: 20px;
+}
+}

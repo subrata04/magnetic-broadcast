@@ -1,0 +1,523 @@
+/*common css*/
+textarea{ resize:none }
+/*--------- Place holder css for all [start] -------*/
+::-webkit-input-placeholder  { color:#7b7b7b; }
+::-webkit-textarea-placeholder  { color:#7b7b7b; }
+input:-moz-placeholder { color:#7b7b7b; }
+textarea:-moz-placeholder { color:#7b7b7b; }
+/*--------- Place holder css for all [end] -------*/
+
+.up_image{
+    display: none;
+}
+
+#content h3{
+    border-bottom:1px dashed #c0c0c0; 
+    clear:both; 
+    margin-right:10px;
+    margin-bottom:10px;
+    padding-bottom:5px;
+    color:#484848;
+    width:50%;
+    font: normal 18px/22px Tahoma, "Trebuchet MS","Lucida Sans";
+}
+/****************************************************************/
+.req{
+    color:red;
+}
+.small{
+    font: 10px/20px Verdana,Arial,Helvetica,sans-serif !important;
+    font-style: italic !important;
+}
+/******************** Image upload [start]******************/
+.image_upload {
+    float: left; 
+    width: 250px; 
+    margin: 0 10px 10px 0;
+}
+
+.image_upload .input-small, 
+.image_upload .input-vsmall, 
+.image_upload .input-medium, 
+.image_upload .input-big, 
+.image_upload .input-flex, 
+.image_upload select, 
+.image_upload textarea{
+    margin: 0;
+    margin-bottom: 1px;
+}
+.image_upload div.mainimage{
+    position: relative;
+    height: 130px;
+    width: 250px;
+    overflow: hidden;
+    border: 1px solid #959595;
+    margin-bottom: 1px;
+    text-align: center;
+    /*display: table-cell;
+    vertical-align: middle;*/
+    padding: 10px 0px;
+    background: black;
+}
+.image_upload div.mainimage img{
+    /*width: 252px;
+    margin-top: 10px;*/
+}
+.image_upload div.topedit {  
+    position:absolute;
+    top:5px;
+    right: 3px;
+    background: white;
+    padding: 4px 0 0 4px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #959595;
+    display: none;
+}
+.image_upload div.toppreview1 {  
+    position:absolute;
+    top:30px;
+    right: 3px;
+    background: white;
+    padding: 4px 0 0 4px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #959595;
+    display: none;
+}
+.image_upload div.toppreview2 {  
+    position:absolute;
+    top:55px;
+    right: 3px;
+    background: white;
+    padding: 4px 0 0 4px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #959595;
+    display: none;
+}
+.image_upload div.topdel {  
+    position:absolute;
+    top:80px;
+    right: 3px;
+    background: white;
+    padding: 4px 0 0 4px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #959595;
+    display: none;
+}
+
+.help, .input-medium-help{  
+    position:absolute;
+    top:5px;
+    left: -5px;
+    height: 20px;
+    width: 20px;
+}
+.input-medium-help {
+    left: 260px;
+}
+
+.help-container{
+    position: relative;
+    margin-bottom: 0px;
+}
+.help-container .input-small, .help-container .input-vsmall, .help-container .input-medium, .help-container .input-big, .help-container .input-flex, .help-container select, .help-container textarea{
+    margin-bottom: 1px;
+}
+.image_upload div.topedit img, .image_upload div.toppreview1 img, .image_upload div.toppreview2 img, .image_upload div.topdel img{  
+    width:16px;
+    height: 16px;
+}
+.image_upload2 img{
+    border: 1px solid #CCC;
+}
+.span_private{
+    visibility: hidden;
+}
+/******************** Image upload [end]******************/
+
+
+/********************** FACEBOX CONTENT [start]  **********************/
+
+#fbcontent h2{
+    border-bottom:1px solid #c0c0c0; 
+    clear:both; 
+    margin-right:10px;
+    margin-bottom:10px;
+    padding-bottom:5px;
+    color:#484848;
+    font: normal 22px/22px Tahoma, "Trebuchet MS","Lucida Sans";
+}
+#fbcontent label span{
+    font-weight: bold;
+    width: 150px;
+    display: block;
+    border-bottom: 1px dashed #ccc; 
+    padding-left: 5px;
+}
+.ok_fb_div{
+    border: #144E42 1px solid;
+    background-color: #F8F8F8;
+    font: 14px/20px Arial,Helvetica,sans-serif !important;
+    padding: 20px;
+    width: 400px;
+    color:#004C1A;
+}
+.err_fb_div{
+    border: #144E42 1px solid;
+    background-color: #F8F8F8;
+    font: 14px/20px Arial,Helvetica,sans-serif !important;
+    padding: 20px;
+    width: 400px;
+    color:#FF0000;
+   
+}
+
+    /*border: #144E42 1px solid;*/
+    background-color: #EFEDED;
+    font: 13px/20px Arial,Helvetica,sans-serif !important;
+    padding: 20px;
+    min-width: 400px;
+}
+.fb_div p {word-wrap:break-word; width:400px;}
+
+
+.fb_div table.show {
+    background-color: #FFFFFF;
+    border: 1px dotted #959595;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.fb_div table.show th {
+    background-color: #FA2D7A;
+    border: 1px dotted #959595;
+    color: #FFFFFF;
+    font: 14px/22px Arial,Helvetica,sans-serif;
+    padding: 3px 5px;
+}
+.fb_div table.show td {
+    border: 1px dotted #959595;
+    color: #636363;
+    font: 12px/22px Arial,Helvetica,sans-serif;
+    padding: 10px 10px;
+    line-height: 18px;
+}
+.fb_div table.show tr.alt {
+    background-color: #144E42;
+}
+.fb_div table.show caption {
+    /*padding: 0 0 5px 0;*/
+    width: 470px;     
+    text-align: right;
+    height: 3px;
+    /*height: ;*/
+}
+.fb_div img#user_image{
+    height: 100px; 
+    border: 1px solid #CCC; 
+    padding: 2px; 
+    margin-bottom: 10px;
+}
+/********************** FACEBOX CONTENT [end]  **********************/
+
+.link_show{
+    text-decoration: none;
+}
+.link_show:hover{
+    text-decoration: underline;
+}
+
+/********************* paginition css [start] **************************/
+.Pagenation{
+    margin: 15px 0px;
+    font-weight: bold;
+}
+.Pagenation a {
+  background-color:#04ABE2;
+    padding: 2px 5px;
+    border: 1px solid #000;
+}
+.Pagenation span {
+  background-color:#0459E2;
+    padding: 2px 5px;
+    margin: 0 0 0 5px; 
+    color: #FFFFFF;   
+    border: 1px solid #000;
+}
+/********************* paginition css [end] **************************/
+.clear {
+    clear: both;
+}
+.brand {
+    color: #E05E00 !important;
+    font-family: georgia;
+    font-style: italic;
+}
+
+
+
+table.details {
+    border: 1px solid #959595;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+table.details th {
+   background-color:#0483e4;
+    border: 1px solid #959595;
+    color: #FFFFFF;
+    font: 14px/22px Arial,Helvetica,sans-serif;
+    padding: 3px 5px;
+}
+table.details td {
+    border: 1px solid #959595;
+    color: #636363;
+    font: 12px/22px Arial,Helvetica,sans-serif;
+    padding: 2px 5px;
+}
+table.details tr.alt {
+    background-color: #144E42;
+}
+table.details caption {
+    /*padding: 0 0 5px 0;*/
+    width: 470px;     
+    text-align: right;
+    height: 3px;
+    /*height: ;*/
+}
+#sidebar .itemuser{ background:transparent url(../../images/admin/icons/users.png) no-repeat 15px center;    }
+#sidebar .model{ background:transparent url(../../images/admin/icons/model.png) no-repeat 15px center;    }
+#sidebar .admin{ background:transparent url(../../images/admin/icons/applications.png) no-repeat 15px center;    }
+#sidebar .itemvideo{ background:transparent url(../../images/admin/icons/video.png) no-repeat 15px center;    }
+#sidebar .itempicture{ background:transparent url(../../images/admin/icons/picture.png) no-repeat 15px center;    }
+#sidebar .itembooking{ background:transparent url(../../images/admin/icons/booking.png) no-repeat 15px center;    }
+#sidebar .itemblog{ background:transparent url(../../images/admin/icons/blog-icon.png) no-repeat 15px center;    }
+#sidebar .itemclient{ background:transparent url(../../images/admin/icons/client.png) no-repeat 15px center;    }  
+#sidebar .itemzip{ background:transparent url(../../images/admin/icons/zip.png) no-repeat 15px center;    }  
+#sidebar .itemorder{ background:transparent url(../../images/admin/icons/invoice.png) no-repeat 15px center;    }
+#sidebar .itemfeed{ background:transparent url(../../images/admin/icons/feed.png) no-repeat 15px center;    }
+
+.button_user .dashboard_button_heading{ background:transparent url(../../images/admin/icons/user.png) no-repeat 0px top;    }
+.button_video .dashboard_button_heading{ background:transparent url(../../images/admin/icons/video.png) no-repeat 0px top;    }
+.button_picture .dashboard_button_heading{ background:transparent url(../../images/admin/icons/picture.png) no-repeat 0px top;}
+.button_blog .dashboard_button_heading{ background:transparent url(../../images/admin/icons/blog-icon.png) no-repeat 0px top;}
+.button_client .dashboard_button_heading{ background:transparent url(../../images/admin/icons/client.png) no-repeat 0px top;}
+.button_zip .dashboard_button_heading{ background:transparent url(../../images/admin/icons/zip.png) no-repeat 0px top;}
+.button_order .dashboard_button_heading{ background:transparent url(../../images/admin/icons/invoice.png) no-repeat 0px top;    }
+
+/*
+#sidebar .item1{ background:transparent url(../../images/admin/icons/Computer.png) no-repeat 15px center;    }
+#sidebar .item2{ background:transparent url(../../images/admin/icons/advanced.png) no-repeat 15px center;}
+#sidebar .item3{ background:transparent url(../../images/admin/icons/applications.png) no-repeat 15px center;    }
+#sidebar .item4{ background:transparent url(../../images/admin/icons/edit.png) no-repeat 15px center;    }
+#sidebar .item5{ background:transparent url(../../images/admin/icons/search.png) no-repeat 15px center;    }
+#sidebar .item6{ background:transparent url(../../images/admin/icons/trash.png) no-repeat 15px center;    }
+#sidebar .item7{ background:transparent url(../../images/admin/icons/copy%20doc.png) no-repeat 15px center;    }
+#sidebar .item11{ background:transparent url(../../images/admin/icons/picture.png) no-repeat 15px center;    }
+#sidebar .item7c{ background:transparent url(../../images/admin/icons/window.png) no-repeat 15px center;    }
+
+#sidebar .itemproduct{ background:transparent url(../../images/admin/icons/product.png) no-repeat 15px center;    }
+#sidebar .itemorder{ background:transparent url(../../images/admin/icons/order.png) no-repeat 15px center;    }
+#sidebar .itemtraining{ background:transparent url(../../images/admin/icons/training_icon.png) no-repeat 15px center;    }
+#sidebar .itemjob{ background:transparent url(../../images/admin/icons/job_icon.png) no-repeat 15px center;    }
+#sidebar .itemfaq{ background:transparent url(../../images/admin/icons/faq_icon.png) no-repeat 15px center;    }
+
+.button1 .dashboard_button_heading{ background:transparent url(../../images/admin/icons/Computer1.png) no-repeat 0px top;    }
+.button2 .dashboard_button_heading{ background:transparent url(../../images/admin/icons/advanced.png) no-repeat 0px top;    }
+.button3 .dashboard_button_heading{ background:transparent url(../../images/admin/icons/applications.png) no-repeat 0px top;    }
+.button4 .dashboard_button_heading{ background:transparent url(../../images/admin/icons/edit.png) no-repeat 0px top;    }
+.button5 .dashboard_button_heading{ background:transparent url(../../images/admin/icons/search.png) no-repeat 0px top;    }
+.button6 .dashboard_button_heading{ background:transparent url(../../images/admin/icons/trash.png) no-repeat 0px top;    }
+.button7 .dashboard_button_heading{ background:transparent url(../../images/admin/icons/window.png) no-repeat 0px top;    }
+.button8 .dashboard_button_heading{ background:transparent url(../../images/admin/icons/archive.png) no-repeat 0px top;    }
+.button9 .dashboard_button_heading{ background:transparent url(../../images/admin/icons/send.png) no-repeat 0px top;    }
+.button10 .dashboard_button_heading{ background:transparent url(../../images/admin/icons/users.png) no-repeat 0px top;    }
+.button11 .dashboard_button_heading{ background:transparent url(../../images/admin/icons/picture.png) no-repeat 0px top;    }
+.button12 .dashboard_button_heading{ background:transparent url(../../images/admin/icons/help.png) no-repeat 0px top;    }
+
+.button_product .dashboard_button_heading{ background:transparent url(../../images/admin/icons/product.png) no-repeat 0px top;    }
+.button_user .dashboard_button_heading{ background:transparent url(../../images/admin/icons/user.png) no-repeat 0px top;    }
+.button_order .dashboard_button_heading{ background:transparent url(../../images/admin/icons/order.png) no-repeat 0px top;    }
+.button_blog .dashboard_button_heading{ background:transparent url(../../images/admin/icons/blog-icon.png) no-repeat 0px top;    }
+.button_trainee .dashboard_button_heading{ background:transparent url(../../images/admin/icons/training_icon.png) no-repeat 0px top;    }
+.button_faq .dashboard_button_heading{ background:transparent url(../../images/admin/icons/faq_icon.png) no-repeat 0px top;    }
+.button_job .dashboard_button_heading{ background:transparent url(../../images/admin/icons/job_icon.png) no-repeat 0px top;    }
+*/
+
+/******************* Message showing starts **********************/
+#error{
+    color:#FF0000;
+    background:url(../../images/admin/false.png) no-repeat 5px 3px;  
+    font-weight:bold;
+    font:normal 12px/22px Arial, Helvetica, sans-serif;
+    padding:0px 0px 0px 25px;
+    background-color: #FBC7C9;
+    margin: 2px 0px;
+    border:red 1px solid;
+}
+
+div.error{
+    color:#FF0000;
+    background:url(../../images/admin/false.png) no-repeat 5px 3px;  
+    font-weight:bold;
+    font:normal 12px/22px Arial, Helvetica, sans-serif;
+    padding:0px 0px 0px 30px;
+    background-color: #FBC7C9;
+    margin: 2px 0px;
+    border:red 1px solid;
+} 
+
+div.ok{
+    color:#004C1A;
+    background:url(../../images/admin/tick.png) no-repeat 5px 3px;  
+    font-weight:bold;
+    font:normal 12px/22px Arial, Helvetica, sans-serif;
+    padding:0px 0px 0px 30px;
+    background-color: #C6D881;
+    margin: 2px 0px;
+    border:#004C1A 1px solid;
+} 
+
+div.info{
+    color:#003D99;
+    background:url(../../images/admin/info.png) no-repeat 5px 3px;  
+    font-weight:bold;
+    font:normal 12px/22px Arial, Helvetica, sans-serif;
+    padding:0px 0px 0px 30px;
+    background-color: #66CCFF;
+    margin: 2px 0px;
+    border:#003D99 1px solid;
+}
+/******************* Message showing ends **********************/
+
+/* youtube video search popup css [start] */
+.show_ytvideo_cont_left{
+    width: 500px;
+    height: 380px;
+    text-align: center;
+    /*border: 1px dashed #AAA;*/
+    float: left;
+    margin-right: 10px;
+    margin-bottom : 10px;
+    background-color: black;
+}
+.show_ytvideo_cont_small{
+    width: 112px;
+    height: 114px;
+    text-align: center;
+    /*border: 1px dashed #AAA;*/
+    float: left;
+    margin-right: 10px;
+    margin-bottom : 10px;
+    background-color: white;
+    padding: 3px;
+    cursor: pointer;
+}
+.show_ytvideo_cont_small img{
+    width: 110px;
+}
+.show_ytvideo_cont_small span.title{
+    font-size: 11px;
+    line-height: 15px;
+}
+/* youtube video search popup css [end] */
+
+/*---------- collapse [start] ---------*/
+.bg_wrapper_collapse {
+    background:none !important;
+    background-image: none !important;
+}
+.content_collapse{
+    margin-left:20px !important;
+    margin-right:30px !important;
+    padding-top:20px !important;
+    position:relative !important;
+}
+.sidebar_collapse{
+    float:left !important;
+    width:270px !important;
+    position:fixed !important;
+    border:#ff0000 0px solid !important;
+    /*padding-bottom:25px;*/
+    margin-bottom:20px !important;
+    left:-273px !important;
+}
+.Collapse {
+    width:16px !important;
+    height:25px !important;
+    float:right !important;
+    margin:0px 0px 0 0px !important;
+}
+
+/*---------- collapse [end] ---------*/
+
+/*------ UIBlock [start] ---------*/
+div.growlUI { /*background: url(check48.png) no-repeat 10px 10px */}
+div.growlUI h1, div.growlUI h2 {
+    color: white; 
+    padding: 10px;
+    text-align: left
+}
+/*------ UIBlock [end] ---------*/
+.table_view .fild_name {
+    width: 200px;
+    float: left;
+    margin-bottom: 7px;
+}
+.table_view .fild_text {
+    width: 400px;
+    float:left;
+    margin-bottom: 7px;
+}
+/** Twitter feed show CSS [start]**/
+.socal_bg{ background:#fff; margin:0; padding:0; width:348px;  }
+.socal_bg .block{ margin:0 8px; padding:8px 0; border-bottom:1px dashed #dbdbdb;}
+.socal_bg .block_left{ width:36px; float:left;}
+.socal_bg .block_right{ width:268px; float:right; margin-left:10px; font:normal 12px/14px Arial, Helvetica, sans-serif; color:#242327;}
+.socal_bg .block_right a{ color:#3438a1; text-decoration:underline;}
+.socal_bg .block_right a:hover{ color:#3438a1; text-decoration:none;}
+.socal_bg .block_right span{ color:#b1b1b1; padding-left:3px; clear:both;}
+.socal_bg .block_right span a{color:#b1b1b1; text-decoration:underline;}
+
+.scrollbar3 { width: 356px; margin:0px 0 0px 0; border:#fff 0px solid;  }
+.scrollbar3 .viewport { width: 336px; height:300px; overflow: hidden; position: relative; }
+.scrollbar3 .overview { list-style: none; position: absolute; left: 0px; top: 0; padding: 0; margin: 0; }
+.scrollbar3 .scrollbar{ background:  #d2d4d5; position: relative; background-position: 0 0; float: right; width: 7px; }
+.scrollbar3 .track { background:  #d2d4d5; height: 100%; width:7px; position: relative; padding: 0 1px; left:-2px }
+.scrollbar3 .thumb { background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 7px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: 1px; }
+.scrollbar3 .thumb .end { background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 7px; }
+.scrollbar3 .disable { display: none; }
+
+
+.page-content div.topedit {  
+    position:absolute;
+    top:5px;
+    right: 3px;
+    background: white;
+    padding: 4px 0 0 4px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #959595;
+    display: none;
+}
+
+.thumimg {
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    margin-bottom:10px;
+}
+.thumimg span {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+}
+
+
+
+/** Twitter feed show CSS [end] **/

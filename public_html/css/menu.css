@@ -1,0 +1,230 @@
+.menu-option{ width:50px; margin:0 auto; font-size:18px; color:#fff; line-height:52px; text-transform:uppercase; display:none;}
+#nav {
+
+position: relative;
+	
+
+	margin-top:10px;
+	
+}
+#nav > a {
+	display: none;
+	font-size:13px;
+
+}
+#nav li {
+	position: relative;
+	list-style:none;
+		padding:0 8px;
+}
+#nav li a {
+     font-family: Arial, Helvetica, sans-serif; color:#ffffff;  font-size:16px;
+display: block;
+width:100px;
+	padding:9px 0 9px 0;
+	font-weight:bold; text-transform: uppercase;
+
+
+}
+#nav li a:active {
+color:#f21b1b;
+}
+#nav span:after {
+	width: 0;
+	height: 0;
+	border: 0.313em solid transparent; /* 5 */
+	border-bottom: none;
+	border-top-color: #efa585;
+	content: '';
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+}
+/* first level */
+
+			#nav > ul {
+	
+}
+#nav > ul > li {
+
+	height: 100%;
+	float: left;
+	
+}
+#nav > ul > li > a {
+	height: 100%;
+	font-size: 13px; /* 24 */
+		
+	
+	text-align: center;
+}
+ #nav > ul > li:not( :last-child ) > a {
+
+}
+ #nav > ul > li:hover > a,  #nav > ul:not( :hover ) > li.active > a {
+ 
+ color:#f21b1b;
+ 
+}
+/* second level */
+
+				#nav li ul {
+	background-color: #000;
+	display: none;
+	position: absolute;
+	top: 100%;
+	z-index:999999999999999;
+	width:100%;
+	padding:0;
+	padding-bottom:5px;
+
+}
+#nav li ul li a { padding:10px 0px; line-height:18px;}
+#nav li:hover ul {
+	display: block;
+	left: 0;
+	right: 0;
+}
+ #nav li:not( :first-child ):hover ul {
+ left: -1px;
+}
+#nav li ul a {
+	font-size: 12px; /* 20 */
+	
+	 text-shadow:none;
+	 text-align:center;
+	 background:#303030;
+	 margin:1px 0;
+}
+ #nav li ul li a:hover,  #nav li ul:not( :hover ) li.active a {
+
+ color:#f21b1b;
+
+}
+ @media screen and (max-width:1024px) {
+
+     .nav-contain {
+         height: 100px;
+     }
+
+     .nav-contain .menu {
+         height: auto;
+         position: relative;
+         float: none;
+     }
+
+     #nav {
+         position: absolute;
+         z-index: 9999999;
+
+         width: 75%;
+         padding: 0;
+         left: 12.5%;
+
+     }
+
+     #nav > a {
+         width: 50px; /* 50 */
+         height: 40px; /* 50 */
+         text-align: left;
+         text-indent: -9999px;
+         background-color: #2e2e2e;
+         position: relative;
+         margin: 0 auto;
+
+     }
+
+     #nav > a:before, #nav > a:after {
+         position: absolute;
+         border: 2px solid #fff;
+         top: 35%;
+         left: 25%;
+         right: 25%;
+         content: '';
+     }
+
+     #nav > a:after {
+         top: 60%;
+     }
+
+     #nav:not( :target ) > a:first-of-type, #nav:target > a:last-of-type {
+         display: block;
+     }
+
+     /* first level */
+     #nav > ul {
+         height: auto;
+         display: none;
+         position: absolute;
+         left: 0;
+         right: 0;
+         top: 40px;
+
+     }
+
+     #nav:target > ul {
+         display: block;
+     }
+
+     #nav > ul > li {
+         width: 100%;
+         float: none;
+         background: #2e2e2e;
+     }
+
+     #nav > ul > li > a {
+         height: auto;
+         text-align: center;
+         padding: 0 0.833em; /* 20 (24) */
+     }
+
+     #nav > ul > li:not( :last-child ) > a {
+         border-right: none;
+         border-bottom: 1px solid #4b4b4b;
+     }
+
+     #nav li a {
+         width: auto;
+         padding: 10px 0;
+         height: 40px;
+         line-height: 40px;
+         padding: 0 2%;
+     }
+
+     /* second level */
+     #nav li ul {
+         position: static;
+         padding: 0 5%;
+         z-index: 999999999999999;
+         overflow: auto;
+         width: 90%;
+
+     }
+
+     #nav li ul li {
+         padding: 0;
+         margin: 0;
+     }
+
+     #nav li ul li a {
+         border-right: none;
+         border-top: none;
+         border-bottom: 1px solid #4b4b4b;
+         line-height: 35px;
+         height: 35px;
+         padding: 0px;
+     }
+
+     #nav > ul > li:hover > a, #nav > ul:not( :hover ) > li.active > a {
+         background-image: none;
+         color: #f21b1b;
+
+     }
+
+     #nav li {
+
+         padding: 0;
+
+     }
+
+ }

@@ -1,0 +1,139 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+/**
+* An abstruct model for extending into other controllers.
+* Here we will write the common functions
+* 
+* @author: Arnab Chattopadhyay
+*/
+
+require_once APPPATH.'models/my_model.php';
+class Order_model extends My_model {
+    public function __construct() {
+        parent::__construct();
+    }
+    
+    public $m_status = array(1=>'Pending', 2=>'In process', 3=>'Delivered' ,4=>'Cancelled');
+
+    public function tblCreate()
+    {
+        $sql='CREATE TEMPORARY TABLE IF NOT EXISTS `itpl_temp_table` (
+        `id` int NOT NULL AUTO_INCREMENT,
+        `i_user_id` int,
+        `s_b_fname` varchar(255),
+        `s_b_lname` varchar(255),
+        `s_b_addr` varchar(255),
+        `i_b_country` int,
+        `i_b_state` int, 
+        `s_b_zip` varchar(255),
+        `s_b_tele` varchar(255),
+        `s_s_fname` varchar(255),
+        `s_s_lname` varchar(255),
+        `s_s_addr` varchar(255),
+        `i_s_country` int, 
+        `i_s_state` int, 
+        `s_s_zip` varchar(255),
+        `s_s_tele` varchar(255),
+        `s_cart_details` text(10000),
+        PRIMARY KEY (`id`)
+        )';
+        $this->db->query($sql);
+    }
+
+    /**
+    * function for inserting data into tables after transaction success
+    * 
+    * @param int $i_temp_id
+    * @return mixed
+    */
+    public function tran_success($i_temp_id=0) {
+        $total_amount=0;  
+        //Fetch from temp table
+        $res=$this->db->get_where('temp_table',array('id'=>$i_temp_id));
+        $arr = $res->row_array();
+        if(count($arr)>0){
+            $this->db->trans_begin();
+            // Billing information [start]
+            $m_send_data_trading['s_b_fname'] = get_safe($arr['s_b_fname']);
+            $m_send_data_trading['s_b_lname'] = get_safe($arr['s_b_lname']);
+            $m_send_data_trading['s_b_addr'] = get_safe($arr['s_b_addr']);
+            $m_send_data_trading['i_b_country'] = intval(get_safe($arr['i_b_country']));
+            $m_send_data_trading['i_b_state'] = intval(get_safe($arr['i_b_state']));
+            $m_send_data_trading['s_b_zip'] = get_safe($arr['s_b_zip']);
+            $m_send_data_trading['s_b_tele'] = get_safe($arr['s_b_tele']);
+            // Billing information [end]                
+            // Shipping information [start]
+            $m_send_data_trading['s_s_fname'] = get_safe($arr['s_s_fname']);
+            $m_send_data_trading['s_s_lname'] = get_safe($arr['s_s_lname']);
+            $m_send_data_trading['s_s_addr'] = get_safe($arr['s_s_addr']);
+            $m_send_data_trading['i_s_country'] = intval(get_safe($arr['i_s_country']));
+            $m_send_data_trading['i_s_state'] = intval(get_safe($arr['i_s_state']));
+            $m_send_data_trading['s_s_zip'] = get_safe($arr['s_s_zip']);
+            $m_send_data_trading['s_s_tele'] = get_safe($arr['s_s_tele']);
+            // Shipping information [end]
+            // setting user id
+            $m_send_data_trade['i_user_id']=$m_send_data_trading['i_user_id'] = get_safe($arr['i_user_id']);
+            // Insert into trading user table
+            $this->db->insert('user_trading_details',$m_send_data_trading);
+
+            //get insert id
+            $i_trade_id=$this->db->insert_id();
+
+            // Data for package trade details
+            $m_send_data_trade['i_trade_id']=  $i_trade_id;
+            $m_send_data_trade['i_date']=  time();
+
+            // Cart data insert into table
+            $cart=unserialize($arr['s_cart_details']);
+            foreach($cart as $row)
+            {
+                $total_amount +=  $row['qty'] * $row['price'];
+
+                $m_send_data_trade['i_package_id']=  $row['id'];
+                $m_send_data_trade['s_package_name']=  $row['name'];
+                $m_send_data_trade['s_package_details']=  $row['options']['s_description'];
+                $m_send_data_trade['s_package_quantity']=  $row['qty'];
+                $m_send_data_trade['s_price']=  $row['price'];
+
+                // Insert into package trading user table
+                $this->db->insert('package_trade_details',$m_send_data_trade);
+            }
+            //Delete row from temporary ID
+            $this->db->delete('temp_table',array('id'=>$i_temp_id));
+
+
+            //Get Last 3 Level of customer COMMISSION
+            $sql="SELECT vud1.id,ifnull(vud1.i_parent_id,0) AS i_pid,ifnull(vud1.i_parent_parent_id,0) AS i_ppid,ifnull(vud2.i_parent_id,0) AS i_pppid,ifnull(vud2.i_parent_parent_id,0) AS i_ppppid FROM itpl_vw_user_details AS vud1 LEFT JOIN itpl_vw_user_details AS vud2 ON vud1.i_parent_parent_id = vud2.id WHERE vud1.id=".$arr['i_user_id']." GROUP BY vud1.id";
+            $result=$this->db->query($sql);
+
+            $parent=$result->row_array();
+            if($parent['i_pid'] != 0) {
+                $sql2 = "INSERT INTO itpl_comp_plan (i_user_id, i_tran_id, f_commission) VALUES (".$parent['i_pid']." , ".$i_trade_id." , ".($total_amount * 25/100).")";
+                $this->db->query($sql2);
+            }
+            if($parent['i_ppid'] != 0) {
+                $sql2 = "INSERT INTO itpl_comp_plan (i_user_id, i_tran_id, f_commission) VALUES (".$parent['i_ppid']." , ".$i_trade_id." , ".($total_amount * 10/100).")";
+                $this->db->query($sql2);
+            }
+            if($parent['i_pppid'] != 0) {
+                $sql2 = "INSERT INTO itpl_comp_plan (i_user_id, i_tran_id, f_commission) VALUES (".$parent['i_pppid']." , ".$i_trade_id." , ".($total_amount * 10/100).")";
+                $this->db->query($sql2);
+            }
+
+            // Checking transaction status
+            if ($this->db->trans_status() === FALSE) {
+                $this->db->trans_rollback();
+                return 0;
+            } else {
+                $this->db->trans_commit();
+                return 1;
+            }
+        } else {
+            return 0;
+        }
+    }
+    
+}
+
+/* End of file welcome.php */
+/* Location: ./application/controllers/welcome.php */

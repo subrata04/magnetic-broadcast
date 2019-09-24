@@ -1,0 +1,13 @@
+RewriteEngine on
+
+#RewriteBase /influxdevs/ripoff/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# done for replicated site url [start]
+RewriteRule ^(\w*)/(css|images|uploads|js|fonts|font|tmhOAuth-master)/(.*)$ $2/$3 
+# done for replicated site url [end]
+
+RewriteCond $1 !^(index\.php|js|css|images|fonts|font|uploads|extensions|tmhOAuth-master|robots\.txt)
+#RewriteRule ^(.*)$ index.php?/$1 [L]

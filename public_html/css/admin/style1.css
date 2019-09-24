@@ -1,0 +1,296 @@
+body{
+    background:#fff url(../../images/admin/topbg.gif) repeat-x;
+}
+
+th {
+    background:#4a5c8a url(../../images/admin/highlight_line.gif) repeat-x scroll 0 0;
+}
+
+td.alt {
+    background: #eeeeee url(../../images/admin/highlight_line.gif) repeat-x scroll 0 0;
+    color: #151515;
+}
+textarea{resize: none}
+
+th.specalt {
+    background: #eeeeee;
+    color: #151515;
+}
+
+.button{
+    background:#233155;
+    color:#fff;
+}
+
+.button:hover{
+    background:#4a5c8a;
+}
+/******************** job ticket view portion *********************/
+.msg_main{
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #F4F2F2;
+}
+.msg_reply{
+    cursor: pointer;
+    padding: 10px; 
+    border-bottom: 1px solid #F4F2F2;
+}
+.msg_active{
+    background-color: #FFF; 
+}
+.msg_inactive{
+    border-bottom: none;
+    margin-bottom: 1px;
+    background-color: #F4F2F2; 
+    height: 38px;
+    overflow: hidden;
+}
+#reply_post_div{
+    display: none;
+}
+/******************** job ticket view portion *********************/
+
+/****************** Tooltip for tree [start] **********************/
+.tip_divs{ 
+    background:#e2e6f0; 
+    /*margin:10px;*/
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+.tips_cont{ 
+    background:none;
+    min-width: 250px;
+}
+.tips_cont tr td { 
+    background:none; 
+    font:normal 12px/16px Arial, Helvetica, sans-serif; 
+    color:#223156; 
+    text-align:left;
+}
+.tips_cont tr td strong{ 
+    font-weight:bold
+}/**/
+/****************** Tooltip for tree [end] **********************/
+/***********************  **************************/
+ul#user_access_list{
+    margin-left: -20px;    
+    margin-top: 0px;    
+}
+ul#user_access_list img.expand, ul#user_access_list img.collapse{
+    cursor: pointer;
+}
+
+/************* Order Details [start] *****************/
+.fild_name {
+    width: 200px;
+    float: left;
+    font: bold 13px/22px Arial, Helvetica, sans-serif;
+    color: #666;
+}
+.fild_text {
+    width: 400px;
+    float: left;
+    margin-bottom: 8px;
+}
+.prod_det{
+    width: 400px;
+    background:#e2e6f0; 
+    color: #484848;
+    /*margin:5px;*/
+    padding: 10px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    text-align: left;
+}
+/************* Order Details [end] *****************/
+
+
+.up_image{
+    display: none;
+}
+/****************************************************************/
+.req{
+    color:red;
+}
+.small{
+    font: 10px/20px Verdana,Arial,Helvetica,sans-serif !important;
+    font-style: italic !important;
+}
+
+
+/******************** Image upload [start]******************/
+.image_upload {
+    float: left; 
+    width: 250px; 
+    margin: 0 10px 10px 0;
+}
+
+.image_upload .input-small, 
+.image_upload .input-vsmall, 
+.image_upload .input-medium, 
+.image_upload .input-big, 
+.image_upload .input-flex, 
+.image_upload select, 
+.image_upload textarea{
+    margin: 0;
+    margin-bottom: 1px;
+}
+.image_upload div.mainimage{
+    position: relative;
+    height: 150px;
+    width: 250px;
+    overflow: hidden;
+    border: 1px solid #959595;
+    margin-bottom: 1px;
+}
+.image_upload div.mainimage img{
+    width: 252px;
+}
+.image_upload div.topedit {  
+    position:absolute;
+    top:5px;
+    right: 3px;
+    background: white;
+    padding: 4px 0 0 4px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #959595;
+    display: none;
+}
+.image_upload div.toppreview1 {  
+    position:absolute;
+    top:30px;
+    right: 3px;
+    background: white;
+    padding: 4px 0 0 4px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #959595;
+    display: none;
+}
+.image_upload div.toppreview2 {  
+    position:absolute;
+    top:55px;
+    right: 3px;
+    background: white;
+    padding: 4px 0 0 4px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #959595;
+    display: none;
+}
+.image_upload div.topdel {  
+    position:absolute;
+    top:80px;
+    right: 3px;
+    background: white;
+    padding: 4px 0 0 4px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #959595;
+    display: none;
+}
+
+.help, .input-medium-help{  
+    position:absolute;
+    top:5px;
+    left: -5px;
+    height: 20px;
+    width: 20px;
+}
+.input-medium-help {
+    left: 260px;
+}
+
+.help-container{
+    position: relative;
+    margin-bottom: 0px;
+}
+.help-container .input-small, .help-container .input-vsmall, .help-container .input-medium, .help-container .input-big, .help-container .input-flex, .help-container select, .help-container textarea{
+    margin-bottom: 1px;
+}
+.image_upload div.topedit img, .image_upload div.toppreview1 img, .image_upload div.toppreview2 img, .image_upload div.topdel img{  
+    width:16px;
+    height: 16px;
+}
+.image_upload2 img{
+    border: 1px solid #CCC;
+}
+.span_private{
+    visibility: hidden;
+}
+/******************** Image upload [end]******************/
+
+
+/********************** FACEBOX CONTENT [start]  **********************/
+
+#fbcontent h2{
+    border-bottom:1px solid #c0c0c0; 
+    clear:both; 
+    margin-right:10px;
+    margin-bottom:10px;
+    padding-bottom:5px;
+    color:#484848;
+    font: normal 22px/22px Tahoma, "Trebuchet MS","Lucida Sans";
+}
+#fbcontent label span{
+    font-weight: bold;
+    width: 150px;
+    display: block;
+    border-bottom: 1px dashed #ccc; 
+    padding-left: 5px;
+}
+.fb_div{
+    /*border: #144E42 1px solid;*/
+    background-color: #E2DCDC;
+    font: 13px/20px Arial,Helvetica,sans-serif !important;
+    padding: 20px;
+    width: 400px;
+}
+.ok_fb_div{
+    border: #144E42 1px solid;
+    background-color: #F8F8F8;
+    font: 14px/20px Arial,Helvetica,sans-serif !important;
+    padding: 20px;
+    width: 400px;
+    color:#004C1A;
+}
+.err_fb_div{
+    border: #144E42 1px solid;
+    background-color: #F8F8F8;
+    font: 14px/20px Arial,Helvetica,sans-serif !important;
+    padding: 20px;
+    width: 400px;
+    color:#FF0000;
+}
+
+/********************** FACEBOX CONTENT [end]  **********************/
+
+.link_show{
+    text-decoration: none;
+}
+.link_show:hover{
+    text-decoration: underline;
+}
+
+/********************* paginition css [start] **************************/
+.Pagenation{
+    margin: 15px 0px;
+    font-weight: bold;
+}
+.Pagenation a {
+    background-color: #B4BDD2;
+    padding: 2px 5px;
+    border: 1px solid #213056;
+}
+.Pagenation span {
+    background-color: #213056;
+    padding: 2px 5px;
+    margin: 0 0 0 5px; 
+    color: #FFFFFF;   
+    border: 1px solid #B4BDD2;
+}
+/********************* paginition css [end] **************************/
